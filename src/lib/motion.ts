@@ -1,8 +1,7 @@
-// Aether Workspace Motion Utilities
-// Standardized animation configurations for consistent UX
+
 
 export const motionConfig = {
-  // Timing scale
+
   duration: {
     fast: 0.16,
     normal: 0.22,
@@ -10,7 +9,7 @@ export const motionConfig = {
     page: 0.4,
   },
   
-  // Easing curves
+
   ease: {
     default: [0.16, 1, 0.3, 1],
     smooth: [0.4, 0, 0.2, 1],
@@ -19,7 +18,7 @@ export const motionConfig = {
   },
 } as const;
 
-// Animation variants for common patterns
+
 export const fadeIn = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
@@ -67,7 +66,7 @@ export const slideInLeft = {
   },
 };
 
-// Stagger children animation
+
 export const staggerContainer = {
   initial: {},
   animate: {
@@ -90,7 +89,7 @@ export const staggerItem = {
   },
 };
 
-// Page transition
+
 export const pageTransition = {
   initial: { opacity: 0, y: 20 },
   animate: { 
@@ -110,7 +109,7 @@ export const pageTransition = {
   },
 };
 
-// Interactive element hover
+
 export const hoverScale = {
   whileHover: { scale: 1.02 },
   whileTap: { scale: 0.98 },
