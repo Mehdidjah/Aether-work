@@ -2,18 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Aether Workspace Design System */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Primary - Champagne Gold */
+ 
     --primary: 43 45% 59%;
     --primary-hover: 43 40% 53%;
     --primary-active: 43 38% 46%;
     --primary-foreground: 0 0% 7%;
 
-    /* Neutrals */
+   
     --background: 0 0% 98%;
     --foreground: 0 0% 7%;
     --card: 0 0% 100%;
@@ -21,25 +21,25 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 7%;
 
-    /* Surface colors */
+
     --surface: 0 0% 96%;
     --surface-dark: 0 0% 93%;
     --soft-light: 0 0% 93%;
 
-    /* Secondary */
+ 
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 11%;
 
-    /* Muted */
+
     --muted: 0 0% 93%;
     --muted-foreground: 0 0% 45%;
 
-    /* Accent - Olive */
+  
     --accent: 78 26% 48%;
     --accent-hover: 78 28% 41%;
     --accent-foreground: 0 0% 98%;
 
-    /* Status colors */
+
     --success: 130 22% 46%;
     --success-foreground: 0 0% 98%;
     --warning: 43 55% 57%;
@@ -49,13 +49,13 @@
     --destructive: 0 38% 56%;
     --destructive-foreground: 0 0% 98%;
 
-    /* UI */
+   
     --border: 0 0% 89%;
     --input: 0 0% 89%;
     --ring: 43 45% 59%;
     --radius: 0.625rem;
 
-    /* Sidebar */
+ 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 0 0% 11%;
     --sidebar-primary: 43 45% 59%;
@@ -67,13 +67,13 @@
   }
 
   .dark {
-    /* Primary - Champagne Gold */
+
     --primary: 43 45% 59%;
     --primary-hover: 43 48% 65%;
     --primary-active: 43 50% 70%;
     --primary-foreground: 0 0% 7%;
 
-    /* Neutrals - Dark mode */
+   
     --background: 0 0% 7%;
     --foreground: 0 0% 93%;
     --card: 0 0% 11%;
@@ -81,25 +81,25 @@
     --popover: 0 0% 11%;
     --popover-foreground: 0 0% 93%;
 
-    /* Surface colors */
+ 
     --surface: 0 0% 11%;
     --surface-dark: 0 0% 16%;
     --soft-light: 0 0% 16%;
 
-    /* Secondary */
+
     --secondary: 0 0% 16%;
     --secondary-foreground: 0 0% 93%;
 
-    /* Muted */
+
     --muted: 0 0% 16%;
     --muted-foreground: 0 0% 64%;
 
-    /* Accent - Olive */
+ 
     --accent: 78 26% 48%;
     --accent-hover: 78 28% 55%;
     --accent-foreground: 0 0% 98%;
 
-    /* Status colors */
+
     --success: 130 22% 46%;
     --success-foreground: 0 0% 98%;
     --warning: 43 55% 57%;
@@ -109,12 +109,12 @@
     --destructive: 0 38% 56%;
     --destructive-foreground: 0 0% 98%;
 
-    /* UI */
+
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 43 45% 59%;
 
-    /* Sidebar */
+
     --sidebar-background: 0 0% 11%;
     --sidebar-foreground: 0 0% 93%;
     --sidebar-primary: 43 45% 59%;
@@ -141,7 +141,7 @@
     @apply bg-background text-foreground;
   }
 
-  /* Custom scrollbar */
+
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -161,12 +161,12 @@
 }
 
 @layer components {
-  /* Glass effect */
+
   .glass {
     @apply bg-card/80 backdrop-blur-xl border border-border/50;
   }
 
-  /* Gradient backgrounds */
+
   .gradient-primary {
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-hover)) 100%);
   }
@@ -175,19 +175,19 @@
     background: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--surface)) 100%);
   }
 
-  /* Skeleton loader */
+
   .skeleton {
     @apply animate-pulse bg-muted rounded;
   }
 
-  /* Focus ring */
+  
   .focus-ring {
     @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background;
   }
 }
 
 @layer utilities {
-  /* Motion safe animations */
+
   @media (prefers-reduced-motion: no-preference) {
     .animate-in {
       animation: fadeIn 0.2s ease-out;
