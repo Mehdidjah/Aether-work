@@ -38,6 +38,3 @@ npm run dev
 - Framer Motion
 - Fabric.js
 
-## License
-
-MIT License — Created by Mehdi
